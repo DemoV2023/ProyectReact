@@ -96,7 +96,7 @@ const CompEditPersons = () => {
                         className='form-control'
                     />                 
                  </div>           
-            <button type="submit" className="btn btn-primary">Update</button>
+            <button type="submit" className="btn btn-primary">Actualizar</button>
         </form>
     </div>
     )

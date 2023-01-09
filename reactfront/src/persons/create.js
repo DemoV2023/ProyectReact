@@ -84,7 +84,7 @@ const CompCreatePersons = () => {
                         className='form-control'
                     />                 
                  </div>  
-                 <button type='submit' className='btn btn-primary'>Store</button>                  
+                 <button type='submit' className='btn btn-primary'>Registrar</button>                  
            </form>
         </div>
     )

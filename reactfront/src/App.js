@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+import logo from './assets/img/icon.png';
 import './App.css';
+
 
 import CompShowInicio from './persons/showPersons.js';
 import CompCreatePersons from './persons/create.js';
@@ -13,8 +14,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
-       <h3>Lista de personas registradas</h3>
+        <h3>
+         <img src={logo} className="App-logo" alt="logo" />
+          Lista de usuarios registrados</h3>
       </header>
           <BrowserRouter>
               <Routes>
