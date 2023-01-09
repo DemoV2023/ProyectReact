@@ -16,7 +16,7 @@ function App() {
       <header className="App-header">
         <h3>
          <img src={logo} className="App-logo" alt="logo" />
-          Lista de usuarios registrados</h3>
+          Sistema de Registro de Usuarios</h3>
       </header>
           <BrowserRouter>
               <Routes>

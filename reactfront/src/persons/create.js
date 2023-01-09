@@ -22,11 +22,12 @@ const CompCreatePersons = () => {
     }   
 
     return (
-        <div>
+        <div className='container'>
            <h3>Registrar Nuevo Usuario</h3>
-           <form onSubmit={store}>
-                <div className='mb-3'>
-                    <label className='form-label'>NroID</label>
+           <form  onSubmit={store}>
+                <div className='row g-3 mt-3'>
+                <div className='col-12'>
+                    <label className='form-label'>Nro de identificación</label>
                     <input
                         value={nroID}
                         onChange={ (e)=> setNroID(e.target.value)} 
@@ -34,7 +35,7 @@ const CompCreatePersons = () => {
                         className='form-control'
                     />
                  </div>   
-                 <div className='mb-3'>
+                 <div className='col-6'>
                      <label className='form-label'>Nombre</label>
                     <textarea
                         value={name}
@@ -43,7 +44,7 @@ const CompCreatePersons = () => {
                         className='form-control'
                     />                 
                  </div>  
-                 <div className='mb-3'>
+                 <div className='col-6'>
                      <label className='form-label'>Apellidos</label>
                     <textarea
                         value={lastname}
@@ -51,7 +52,7 @@ const CompCreatePersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-2'>
                      <label className='form-label'>Edad</label>
                     <textarea
                         value={age}
@@ -59,7 +60,7 @@ const CompCreatePersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-5'>
                      <label className='form-label'>Email</label>
                     <textarea
                         value={email}
@@ -67,7 +68,7 @@ const CompCreatePersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-5'>
                      <label className='form-label'>Celular</label>
                     <textarea
                         value={phone}
@@ -75,7 +76,7 @@ const CompCreatePersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-12'>
                      <label className='form-label'>Dirección</label>
                     <textarea
                         value={direction}
@@ -84,7 +85,10 @@ const CompCreatePersons = () => {
                         className='form-control'
                     />                 
                  </div>  
-                 <button type='submit' className='btn btn-primary'>Registrar</button>                  
+                </div>
+                <div className='mt-3'>
+                    <button type='submit' className='btn btn-primary'>Registrar</button>       
+                </div>               
            </form>
         </div>
     )

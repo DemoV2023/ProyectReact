@@ -37,6 +37,8 @@ const CompShowInicio = ()=> {
                                     <th>Email</th>
                                     <th>Telefono</th>
                                     <th>Dirección</th>
+                                    <th>Opciones 
+                                        </th>
                                 </tr>
                             </thead>
                             <tbody>

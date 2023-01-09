@@ -43,10 +43,11 @@ const CompEditPersons = () => {
     }
 
     return (
-        <div>
+        <div className="container">
         <h3>Editar Usuario</h3>
         <form onSubmit={update}>
-                <div className='mb-3'>
+        <div className='row g-3 mt-3'>
+                <div className='col-6'>
                      <label className='form-label'>Nombre</label>
                     <textarea
                         value={name}
@@ -55,7 +56,7 @@ const CompEditPersons = () => {
                         className='form-control'
                     />                 
                  </div>  
-                 <div className='mb-3'>
+                 <div className='col-6'>
                      <label className='form-label'>Apellidos</label>
                     <textarea
                         value={lastname}
@@ -63,7 +64,7 @@ const CompEditPersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-2'>
                      <label className='form-label'>Edad</label>
                     <textarea
                         value={age}
@@ -71,7 +72,7 @@ const CompEditPersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-5'>
                      <label className='form-label'>Email</label>
                     <textarea
                         value={email}
@@ -79,7 +80,7 @@ const CompEditPersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-5'>
                      <label className='form-label'>Celular</label>
                     <textarea
                         value={phone}
@@ -87,7 +88,7 @@ const CompEditPersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>  <div className='mb-3'>
+                 </div>  <div className='col-12'>
                      <label className='form-label'>Dirección</label>
                     <textarea
                         value={direction}
@@ -95,8 +96,11 @@ const CompEditPersons = () => {
                         type="text"
                         className='form-control'
                     />                 
-                 </div>           
-            <button type="submit" className="btn btn-primary">Actualizar</button>
+                 </div>     
+                </div>     
+                <div className='mt-3'> 
+                     <button type="submit" className="btn btn-primary">Actualizar</button>
+                </div>
         </form>
     </div>
     )
